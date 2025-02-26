@@ -96,22 +96,10 @@ export const dummyWeeklyTransactions: WeeklyTransaction[] = [
 
 export const dummyExpenseStatistics = [
   {
-    name: "groceries",
-    label: "Groceries",
-    percentage: 25,
-    fill: "#FF5733",
-  },
-  {
     name: "utilities",
     label: "Utilities",
     percentage: 20,
     fill: "#33FF57",
-  },
-  {
-    name: "transportation",
-    label: "Transportation",
-    percentage: 15,
-    fill: "#3357FF",
   },
   {
     name: "healthcare",

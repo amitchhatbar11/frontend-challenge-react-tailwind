@@ -4,7 +4,7 @@ Welcome to the Soar Frontend Challenge repository! This project highlights a mod
 
 ## Live Preview
 
-Experience the live version hosted on Vercel: [Soar Frontend Task Challenge]()
+Experience the live version hosted on Vercel: [Soar Frontend Task Challenge](https://frontend-challenge-react-tailwind.vercel.app/)
 
 ---
 
