@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-inter);
+}
+
+@layer base {
+  :root {
+    --background: 220 33% 97%; /* #F5F7FA */
+    --titles: 231 34% 31%; /* #343C6A */
+    --texts: 0 0% 14%; /* #232323 */
+    --primary: 0 0% 14%; /* #232323 */
+    --primary-foreground: 0 0% 100%; /* #FFFFFF */
+    --secondary-texts: 219 35% 62%; /* #718EBF */
+    --secondary: 225 100% 61%; /* #396AFF */
+    --muted: 0 0% 69%; /* #B1B1B1 */
+    --destructive: 356 91% 56%; /* #F52936 */
+    --chart-1: 225 100% 61%; /* #396AFF */
+    --chart-2: 231 34% 31%; /* #343C6A */
+    --chart-3: 32 98% 56%; /* #FC7900 */
+    --chart-4: 0 0% 14%; /* #232323 */
+    --border: 204 48% 92%; /* #E6EFF5 */
+    --input-border: 206 44% 91%; /* #DFEAF2 */
+    --input-background: 220 33% 97%; /* #F5F7FA */
+    --input-secondary: 216 38% 95%; /* #EDF1F7 */
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 100%; /* #FFFFFF */
+    --sidebar-foreground: 240 5% 26%; /* #424242 */
+    --sidebar-primary: 240 6% 10%; /* #1A1A1A */
+    --sidebar-primary-foreground: 0 0% 98%; /* #FCFCFC */
+    --sidebar-accent: 240 5% 96%; /* #F4F4F4 */
+    --sidebar-accent-foreground: 240 6% 10%; /* #1A1A1A */
+    --sidebar-border: 220 13% 91%; /* #E9E9E9 */
+    --sidebar-ring: 217 91% 60%; /* #38BDF8 */
+    --transaction-positive: 162 63% 54%; /* #41D4A8 */
+    --transaction-negative: 0 100% 65%; /* #FF4B4A */
+    --tab-border: 220 16% 96%; /* #F4F5F7 */
+  }
+
+  .dark {
+    --background: 220 13% 18%; /* Adjusted for dark mode */
+    --titles: 220 14% 80%; /* Adjusted for dark mode */
+    --texts: 0 0% 90%; /* Adjusted for dark mode */
+    --primary: 0 0% 14%; /* #232323 */
+    --primary-foreground: 0 0% 100%; /* #FFFFFF */
+    --secondary-texts: 219 35% 62%; /* #718EBF */
+    --secondary: 225 100% 61%; /* #396AFF */
+    --disabled: 0 0% 40%; /* Adjusted for dark mode */
+    --chart-1: 225 100% 61%; /* #396AFF */
+    --chart-2: 231 34% 31%; /* #343C6A */
+    --chart-3: 32 98% 56%; /* #FC7900 */
+    --chart-4: 0 0% 14%; /* #232323 */
+    --border: 204 48% 27%; /* Adjusted for dark mode */
+    --input-border: 206 44% 25%; /* Adjusted for dark mode */
+    --input-background: 220 13% 18%; /* Adjusted for dark mode */
+    --sidebar-background: 240 6% 10%; /* #1A1A1A */
+    --sidebar-foreground: 240 5% 96%; /* #F4F4F4 */
+    --sidebar-primary: 224 76% 48%; /* #4C7FFF */
+    --sidebar-primary-foreground: 0 0% 100%; /* #FFFFFF */
+    --sidebar-accent: 240 4% 16%; /* #2A2A2A */
+    --sidebar-accent-foreground: 240 5% 96%; /* #F4F4F4 */
+    --sidebar-border: 240 4% 16%; /* #2A2A2A */
+    --sidebar-ring: 217 91% 60%; /* #38BDF8 */
+  }
+}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-text;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.weekly-activity-tick {
+  fill: hsl(var(--secondary-texts)) !important;
+  font-size: 13px;
+}
+
+.chart-tick-line {
+  stroke: hsl(var(--secondary-texts));
+}
